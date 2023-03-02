@@ -21,7 +21,7 @@ module.exports = () => {
       // Webpack plugin that generates our html file and injects our bundles.
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "Text editor",
+        title: "JATE",
       }),
       // Injects our custom service worker
       new InjectManifest({
@@ -32,11 +32,11 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: "Text Editor",
-        short_name: "Editor",
+        name: "Just Another Text Editor",
+        short_name: "JATE",
         description: "Text editor!",
-        // background_color: "#225ca3",
-        // theme_color: "#225ca3",
+        background_color: "#225ca3",
+        theme_color: "#225ca3",
         start_url: "./",
         publicPath: "./",
         icons: [
